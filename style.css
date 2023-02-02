@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--verypaleblue);
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.card-content{
+    text-align: center;
+    padding: 1rem 5rem;
+}
+
+.card-header {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--darkblue);
+}
+.card-text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--desaturatedblue);
+    line-height: 2.5rem;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+.header {
+    color: var(--darkblue);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.special {
+    text-align: left;
+    line-height: 2.2rem;
+}
+.text {
+    color: var(--desaturatedblue);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.first-box {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.col a {
+    color: var(--brightblue);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 45px;
+    vertical-align: middle;
+}
+.col a:hover {
+    color: hsl(224, 23%, 55%);
+    transition: .5s;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    color: var(--verypaleblue);
+    background-color: var(--brightblue);
+    padding: 1.5rem 10rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 1.2rem;
+    margin-top: 4rem;
+}
+.btn:hover {
+    background-color: hsl(241, 24%, 57%);
+    transition: .5s;
+}
+
+.btn-2 {
+    display: block;
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.btn-2:hover {
+    color: var(--darkblue);
+    transition: .5s;
+}
+
